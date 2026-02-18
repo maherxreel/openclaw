@@ -5,6 +5,8 @@ RUN curl -fsSL https://bun.sh/install | bash
 ENV PATH="/root/.bun/bin:${PATH}"
 
 RUN corepack enable
+RUN npm i -g node-gyp
+
 
 WORKDIR /app
 
